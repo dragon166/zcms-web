@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.Charset;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -99,7 +100,7 @@ public class JspUtils {
 	 * <br>创建时间：2017年5月15日 下午1:43:22
 	 */
 	public static String getJspRenderText(HttpServletRequest request, HttpServletResponse response, String path ){
-		 return getJspRenderByteArrayOutputStream(request, response, path).toString();
+		 return getJspRenderByteArrayOutputStream(request, response, path).toString(Charset.forName("utf-8"));
 	}
 	
 	/**
