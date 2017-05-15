@@ -8,7 +8,7 @@ public class JspUtilsTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		System.out.println("git 测试");
 	}
 
 }
